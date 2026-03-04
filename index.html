@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폭탄 피하기 게임</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>💣 폭탄 피하기 게임</h1>
+      <p class="description">좌우 방향키 또는 A/D 키로 캐릭터를 움직여 폭탄을 피하세요!</p>
+
+      <section class="hud" aria-label="게임 정보">
+        <div>점수: <strong id="score">0</strong></div>
+        <div>최고 점수: <strong id="bestScore">0</strong></div>
+        <div>생존 시간: <strong id="time">0.0</strong>초</div>
+      </section>
+
+      <div class="game-shell">
+        <canvas id="gameCanvas" width="420" height="560" aria-label="폭탄 피하기 게임 영역"></canvas>
+        <div id="overlay" class="overlay visible" role="status" aria-live="polite">
+          <p id="message">시작 버튼을 눌러 게임을 시작하세요.</p>
+          <button id="startButton" type="button">게임 시작</button>
+        </div>
+      </div>
+
+      <section class="touch-controls" aria-label="터치 조작">
+        <button id="leftButton" type="button">⬅ 왼쪽</button>
+        <button id="rightButton" type="button">오른쪽 ➡</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
