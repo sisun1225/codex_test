@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system, sans-serif;
 }
 
@@ -12,8 +12,8 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: radial-gradient(circle at top, #1f2f4f, #080b12 60%);
-  color: #f2f4ff;
+  background: radial-gradient(circle at top, #dff3ff, #b7d7ff 55%, #9fc4ff 100%);
+  color: #14335b;
 }
 
 .container {
@@ -27,14 +27,14 @@ h1 {
 
 .description {
   margin-top: 0;
-  opacity: 0.86;
+  opacity: 0.92;
 }
 
 .hud {
   display: flex;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(20, 51, 91, 0.14);
   border-radius: 12px;
   padding: 0.8rem 1rem;
   margin-bottom: 1rem;
@@ -46,14 +46,14 @@ h1 {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 32px rgba(47, 103, 178, 0.3);
 }
 
 canvas {
   display: block;
   width: 100%;
   height: auto;
-  background: linear-gradient(180deg, #1f2644 0%, #10172d 60%, #0b0f1d 100%);
+  background: linear-gradient(180deg, #edf7ff 0%, #dceeff 60%, #cce3ff 100%);
 }
 
 .overlay {
@@ -64,7 +64,8 @@ canvas {
   align-content: center;
   gap: 0.9rem;
   padding: 1rem;
-  background: rgba(6, 8, 15, 0.78);
+  background: rgba(235, 245, 255, 0.82);
+  color: #14335b;
   backdrop-filter: blur(3px);
   transition: opacity 0.2s ease;
 }
@@ -80,8 +81,9 @@ button {
   border-radius: 999px;
   padding: 0.7rem 1.2rem;
   font-weight: 700;
-  color: #131726;
-  background: linear-gradient(180deg, #ffe97f, #ffd34a);
+  color: #0f3157;
+  background: linear-gradient(180deg, #fff5a9, #ffe071);
+  box-shadow: 0 6px 14px rgba(216, 159, 45, 0.28);
   cursor: pointer;
 }
 
